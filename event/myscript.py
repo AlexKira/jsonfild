@@ -15,7 +15,3 @@ with open('new_file.json', 'w+') as json_file:
 # And again the same thing with pandas
 export = data_df.to_json('new_file.json', orient='records')
 print(pd.DataFrame(export))
-
-with open('new_file.json') as fp:
-    obj = json.load(fp)
-    print(obj)
